@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "nwallet",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authnwallet83cc0535",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

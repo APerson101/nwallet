@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-nwallet-dev-10056-authRole",
+      "UnauthRoleArn": "arn:aws:iam::889990022206:role/amplify-nwallet-dev-10056-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::889990022206:role/amplify-nwallet-dev-10056-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-nwallet-dev-10056-deployment",
+      "UnauthRoleName": "amplify-nwallet-dev-10056-unauthRole",
+      "StackName": "amplify-nwallet-dev-10056",
+      "StackId": "arn:aws:cloudformation:us-east-1:889990022206:stack/amplify-nwallet-dev-10056/5a8460f0-6700-11ee-a326-0af4cb0fe9c3",
+      "AmplifyAppId": "ddu2vmusqb51j"
+    },
+    "categories": {
+      "auth": {
+        "nwallet83cc0535": {}
+      }
+    }
+  }
+}
