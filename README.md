@@ -1,10 +1,10 @@
 # nwallet
 
 
-DEMO: 
+![Image_demo](https://github.com/APerson101/nwallet/raw/main/demo/image.jpeg)
 
 
-Backend api can be found here: github.com/aperson101/nwallet-api
+Backend api can be found [Here](https://www.github.com/aperson101/nwallet-api) 
 
  A blockchain app using the muliversx sdk,  enabling ticket purchasing and fractionalized real estate. This app leverages blockchain's security and transparency for ticketing, offering users a seamless, secure experience. It employs smart contracts for issuing, transferring, and verifying tickets, reducing fraud. For real estate, the app allows users to invest in and trade fractionalized property, opening up real estate markets. It offers a user-friendly interface and payment options, making it accessible to a wide range of users. The app addresses key issues in ticketing and real estate, offering innovative solutions.
 
