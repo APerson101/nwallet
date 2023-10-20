@@ -48,8 +48,6 @@ Future<UserAccount> loadUserAccount(LoadUserAccountRef ref, String id) async {
 Future<UserAccount> createEGLDAccount(
     CreateEGLDAccountRef ref, String id) async {
   safePrint('$baseUrl/api/createAccount');
-  // var response = await client.get(Uri.http(baseurl,
-  // 'egldbalance/erd1dhj6pu5l92wxvft2zmlpkcnm2xny9c4d728amgy9zjcrnh3du9esjxg6kc'));
   final client = ref.read(httpClientProvider);
   var response = await client.post(Uri.http(baseUrl, '/api/createAccount'));
   var decodedResponse = jsonDecode(utf8.decode(response.bodyBytes)) as Map;

@@ -45,13 +45,11 @@ Future<String> getEGLDBalance(GetEGLDBalanceRef ref) async {
     if (GetIt.I<Helper>().userAccount != null) {
       final address = GetIt.I<Helper>().userAccount!.publickey;
 
-      var response = await client.get(Uri.http(baseUrl,
-          '/egldbalance/erd1dhj6pu5l92wxvft2zmlpkcnm2xny9c4d728amgy9zjcrnh3du9esjxg6kc'));
-      // await client.get(Uri.http(baseUrl, '/egldbalance/$address'));
+      var response =
+          await client.get(Uri.http(baseUrl, '/egldbalance/$address'));
       var reduc = (int.parse(response.body.substring(1, 6)) / 1000).toString();
-      print(reduc);
+
       return reduc;
-      // return response.body;
     }
     return 'Addr';
     // var decodedResponse = jsonDecode(utf8.decode(response.bodyBytes)) as Map;
@@ -204,9 +202,8 @@ Future<List<NFTBalanceType>> getNFTBalance(GetNFTBalanceRef ref) async {
     final client = ref.read(httpClientProvider);
     if (GetIt.I<Helper>().userAccount != null) {
       final address = GetIt.I<Helper>().userAccount!.publickey;
-      var response = await client.get(Uri.http(baseUrl,
-          '/nftbalance/erd1dhj6pu5l92wxvft2zmlpkcnm2xny9c4d728amgy9zjcrnh3du9esjxg6kc'));
-      // await client.get(Uri.http(baseUrl, '/nftbalance/$address'));
+      var response =
+          await client.get(Uri.http(baseUrl, '/nftbalance/$address'));
       var decodedResponse =
           jsonDecode(utf8.decode(response.bodyBytes)) as List<dynamic>;
       List<NFTBalanceType> all = [];
