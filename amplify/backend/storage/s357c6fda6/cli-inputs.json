@@ -1,0 +1,13 @@
+{
+  "resourceName": "s357c6fda6",
+  "policyUUID": "57c6fda6",
+  "bucketName": "nwalleta1b33c33be734747b9e7c994928b3007",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

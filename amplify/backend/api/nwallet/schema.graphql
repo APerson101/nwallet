@@ -2,3 +2,45 @@
 # all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
 input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
 
+type UserAccount @model {
+  id: ID!
+  publickey: String!
+  firstName: String!
+  lastName: String!
+  privatekey: String!
+}
+
+
+type RealEstateNFT @model {
+  id:ID!
+  tokenID: String!
+  urls: [String]!
+  longitude: String!
+  latutude: String!
+  quantity: Int!
+  value: Int!
+  description: String!
+  name: String!
+}
+type TicketNFT @model {
+  id:ID!
+  tokenID: String!
+  urls: [String]!
+  location: String!
+  date: String!
+  description: String!
+  quantity: Int!
+  value: Int!
+  name: String!
+}
+
+
+type TransactionInfo @model {
+  id: ID!
+  type: String!
+  value: String!
+  receiver: String!
+  sender: String!
+  time: String!
+}
+

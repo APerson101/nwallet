@@ -1,3 +1,1 @@
-class UserAccount {
-  String accountID;
-}
+
